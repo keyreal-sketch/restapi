@@ -24,14 +24,14 @@ public class SpringFoxConfig {
                 .build();
     }
 
-    private ApiInfo metaData() {
-        return new ApiInfoBuilder()
-                .title("Spring Boot REST API")
-                .description("\"Spring Boot REST API for Marvel repository\"")
-                .version("1.0.0")
-                .contact(new Contact("Kirill Yakovenko", "http://stm-labs.ru", "xpsswrdx@yandex.ru"))
-                .build();
-    }
+//    private ApiInfo metaData() {
+//        return new ApiInfoBuilder()
+//                .title("Spring Boot REST API")
+//                .description("\"Spring Boot REST API for Marvel repository\"")
+//                .version("1.0.0")
+//                .contact(new Contact("Kirill Y.", "http://stm-labs.ru", "xpsswrdx@yandex.ru"))
+//                .build();
+//    }
 
     protected void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("swagger-ui.html")
