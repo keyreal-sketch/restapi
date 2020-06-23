@@ -38,8 +38,6 @@ public class CharacterService {
         return this.comicRepository.findAllByCharacteridsContainsAndTitleContaining(characterId, comicTitleContaining, pageable);
     }
 
-
-
     public void deleteCharacterById(String characterId) {
         List<Comic> listComic = comicRepository.findAllByCharacteridsContains(characterId);
         Iterator<Comic> iteratorList = listComic.iterator();

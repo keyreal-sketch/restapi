@@ -37,21 +37,6 @@ public class ComicService {
         return this.characterRepository.findAllByComicidsContainsAndNameContaining(comicId, characterNameContainig, pageable);
     }
 
-//    public List<Character> getAllCharactersByComicId(String comicId) {
-//
-//        List<String> characterIdList = comicRepository.getById(comicId).getCharacterids();
-//
-//        if (characterIdList == null) {
-//            return Collections.emptyList();
-//        }
-//
-//        List<Character> charactersList = new ArrayList<>();
-//        for (String idList : characterIdList) {
-//            charactersList.add(characterRepository.getById(idList));
-//        }
-//        return charactersList;
-//    }
-
     public void deleteComicById(String comicId) {
 
         List<Character> listCharacter = characterRepository.findAllByComicidsContains(comicId);

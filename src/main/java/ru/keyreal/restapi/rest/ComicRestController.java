@@ -16,8 +16,6 @@ import ru.keyreal.restapi.model.Character;
 import ru.keyreal.restapi.model.Comic;
 import ru.keyreal.restapi.service.ComicService;
 
-import java.util.List;
-
 @RestController
 @RequestMapping("/v1/public/comics")
 @Api(value="onlinestore", description="Операции с комиксами")

@@ -1,6 +1,7 @@
 package ru.keyreal.restapi.rest;
 
-import io.swagger.annotations.*;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -14,10 +15,6 @@ import org.springframework.web.multipart.MultipartFile;
 import ru.keyreal.restapi.model.Character;
 import ru.keyreal.restapi.model.Comic;
 import ru.keyreal.restapi.service.CharacterService;
-import springfox.documentation.builders.PathSelectors;
-
-import java.util.List;
-import java.util.stream.Stream;
 
 @RestController
 @RequestMapping("/v1/public/characters")
